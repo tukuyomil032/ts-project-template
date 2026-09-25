@@ -1,0 +1,24 @@
+{
+  "name": "ts-project-template",
+  "version": "0.0.0",
+  "module": "index.ts",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "oxfmt": "^0.70.0",
+    "oxlint": "^1.85.0"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  },
+  "private": true,
+  "scripts": {
+    "test": "bun test",
+    "lint": "oxlint .",
+    "lint:fix": "oxlint . --fix",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check",
+    "check": "bun run lint && bun run fmt:check",
+    "prepare": "lefthook install"
+  },
+  "packageManager": "bun@1.4.2"
+}

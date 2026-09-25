@@ -1,0 +1,12 @@
+# pre-commit:
+#   parallel: false
+#   commands:
+#     check:
+#       glob:
+#         - 'src/*.{js,jsx,mjs,cjs,ts,tsx}'
+#       run: bun check
+
+#     # test:
+#     #   glob:
+#     #     - 'src/*.{js,jsx,mjs,cjs,ts,tsx}'
+#     #   run: bun test
